@@ -23,8 +23,8 @@ def xor(data, key):
 mul_e = 1
 sum_e = 0
 for e in get_seq():
-    mul_e *= f(e)
-    sum_e += f(e)
+    mul_e *= e
+    sum_e += e
 
 random.seed(mul_e)
 key_length = random.randint(1, len(flag)//2)
@@ -35,7 +35,7 @@ ciphertext = xor(flag, key)
 print("[+] Ciphertext :", ciphertext.hex())
 
 
-# [+] Ciphertext : 092e8be045f2c72a3da7c84df2f02303b8c05bd9c4210dbdc961e0ca3d0fabd361f6dd260faff857f5f07957ff9409fb
+# [+] Ciphertext : 7196425cfa19da0d68b76c68f532de0945bd6644ea03dd1f5985657ef300d31c68aa7172ec08ed014485352eb45e8515
 
 ######
 # hashlib.sha1(flag).hexdigest() 
