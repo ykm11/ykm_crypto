@@ -35,7 +35,7 @@ ciphertext = xor(flag, key)
 print("[+] Ciphertext :", ciphertext.hex())
 
 
-# [+] Ciphertext : 092e8be045f2c72a3da7c84df2f02303b8c05bd9c4210dbdc961e0ca3d0fabd361f6dd260faff857f5f07957ff9409fb
+# [+] Ciphertext : 4394449f7eac6dbd5ab56aab718769b977bf60876eb66aaf6b8763bd77b564ac5aa877b168bd5ab1768733ed30eb32a5
 
 ######
 # hashlib.sha1(flag).hexdigest() 
